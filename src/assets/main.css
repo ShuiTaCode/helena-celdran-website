@@ -1,11 +1,26 @@
 @import './base.css';
 
-#app {
-  /*max-width: 1280px;*/
-  /*margin: 0 auto;*/
-  /*padding: 2rem;*/
+/*#app {*/
+/*  !*max-width: 1280px;*!*/
+/*  !*margin: 0 auto;*!*/
+/*  !*padding: 2rem;*!*/
+/*  margin-left: auto;*/
+/*  font-weight: normal;*/
+/*}*/
 
-  font-weight: normal;
+#app {
+  background-color: #d5d4d4;
+  margin: 0 auto; /* Zentriert den Container */
+  max-width: 800px; /* Setzt eine maximale Breite */
+  padding: 0 20px; /* Legt den linken und rechten Rand fest */
+}
+
+/* Media Query für Smartphones und Tablets */
+@media screen and (max-width: 767px) {
+  #app {
+    padding: 0; /* Entfernt den Rand */
+    max-width: 100%; /* Setzt die maximale Breite auf 100% */
+  }
 }
 
 

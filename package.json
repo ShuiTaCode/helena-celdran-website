@@ -3,14 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "prettier": "^2.8.8",
     "primeicons": "^6.0.1",
-    "vue": "^3.2.47"
+    "primevue": "^3.27.0",
+    "quill": "^1.3.7",
+    "vue": "^3.2.47",
+    "vue-cookie-accept-decline": "^6.1.0",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",
