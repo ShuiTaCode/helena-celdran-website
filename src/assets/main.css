@@ -9,10 +9,9 @@
 /*}*/
 
 #app {
-  background-color: #d5d4d4;
-  margin: 0 auto; /* Zentriert den Container */
-  max-width: 800px; /* Setzt eine maximale Breite */
-  padding: 0 20px; /* Legt den linken und rechten Rand fest */
+  background-color: #000000;
+ width:100%;
+  height: 100vh;
 }
 
 /* Media Query für Smartphones und Tablets */

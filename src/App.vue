@@ -4,9 +4,11 @@ import MultiLingualCockieBanner from "@/components/MultiLingualCockieBanner.vue"
 </script>
 
 <template>
-<Topbar></Topbar>
 <div class="basic-layout">
-  <router-view></router-view>
+  <div style="width:100%">
+    <Topbar style="width: 100%"></Topbar>
+    <router-view></router-view>
+  </div>
 </div>
   <MultiLingualCockieBanner></MultiLingualCockieBanner>
 </template>
@@ -14,8 +16,20 @@ import MultiLingualCockieBanner from "@/components/MultiLingualCockieBanner.vue"
 <style scoped>
 
 .basic-layout{
+  padding: 0 300px 0 300px;
+  width: 100%;
+  height:100%;
+  background-color: white;
+  opacity: 95%;
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .basic-layout {
+    padding: 0; /* Entfernt den Rand */
+    max-width: 100%; /* Setzt die maximale Breite auf 100% */
+  }
 }
 
 

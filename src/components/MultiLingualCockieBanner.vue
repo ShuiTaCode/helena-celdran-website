@@ -1,12 +1,11 @@
 <template>
   <Sidebar
-    :modal="false"
+    :modal="true"
       :dismissable="false"
       block-scroll
     v-model:visible="isCookieDialogVisible"
     position="bottom"
     :show-close-icon="false"
-
   >
     <VueCookieAcceptDecline
       :position="position"
