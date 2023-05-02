@@ -1,6 +1,6 @@
 runtime: nodejs14
 
-instance_class: B
+instance_class: B2
 
 env_variables:
   PORT: 8080
