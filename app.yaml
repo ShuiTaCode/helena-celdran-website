@@ -15,7 +15,7 @@ handlers:
   - url: /.*
     script: auto
 
-version: v2
+
 
 #handlers:
 #  - url: /.*
