@@ -9,13 +9,19 @@ basic_scaling:
 env_variables:
   PORT: 8080
 
+
+
 handlers:
   - url: /.*
-    static_files: dist/index.html
-    upload: dist/index.html
-  - url: /(.*\.(css|js|map|json|svg|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|otf))$
-    static_files: dist/\1
-    upload: dist/.*\.(css|js|map|json|svg|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|otf)$
-  - url: /(.+\..+)
-    static_files: dist/\1
-    upload: dist/.+\..+
+    script: auto
+
+#handlers:
+#  - url: /.*
+#    static_files: dist/index.html
+#    upload: dist/index.html
+#  - url: /(.*\.(css|js|map|json|svg|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|otf))$
+#    static_files: dist/\1
+#    upload: dist/.*\.(css|js|map|json|svg|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|otf)$
+#  - url: /(.+\..+)
+#    static_files: dist/\1
+#    upload: dist/.+\..+
